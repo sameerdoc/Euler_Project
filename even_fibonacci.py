@@ -20,7 +20,3 @@ while count < MAX:
     count += 1
 
 
-    # print("length is: ", len(lst))
-
-
-    # print("now list is :", lst, end = '')
