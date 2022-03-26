@@ -23,7 +23,7 @@ while count:
     if a % 2 == 0:
         lst.append(a)
         total = sum(lst)
-        # print(" sum of even numbers:",total)
+
     #if the term exceeds value of 4 million, print sum and break from while loop
     if a >= 4000000:
         count = 0
