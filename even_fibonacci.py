@@ -6,17 +6,27 @@
 
 #Solution Below
 
-MAX = 10
+
 a = 1
 b = 2
-count = 0
+count = 1
+lst = []
 
-while count < MAX:
-    print(a)
+while count:
+    # print(a)
     c = a + b
     #update values, dont change below sequence
     a = b
     b = c
     count += 1
-
-
+    # move even numbers to a list and find the sum
+    if a % 2 == 0:
+        lst.append(a)
+        total = sum(lst)
+        # print(" sum of even numbers:",total)
+    #if the term exceeds value of 4 million, print sum and break from while loop
+    if a >= 4000000:
+        count = 0
+        print("limit reached!")
+        print("sum of even numbers:",total)
+        break
